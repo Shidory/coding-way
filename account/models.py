@@ -1,8 +1,8 @@
 from django.db import models
-from django.contrib.auth.password_validation import password_changed
-from django.db.models.fields import CharField
-from unittest.util import _MAX_LENGTH
 
 class CreateAccount(models.Model):
-    surname = models.CharField(_MAX_LENGTH = 100)
-    name = models.CharField(_MAX_LENGTH = 100)
+    surname = models.CharField(max_length = 50)
+    name = models.CharField(max_length = 50)
+    email = models.CharField(max_length = 100)
+    phone = models.CharField(max_length = 13)
+    password = models.CharField(max_length = 100)
