@@ -1,6 +1,7 @@
 from django.db import models
 
 class CreateAccount(models.Model):
+
     surname = models.CharField(max_length = 50)
     name = models.CharField(max_length = 50)
     email = models.CharField(max_length = 100)
@@ -8,4 +9,5 @@ class CreateAccount(models.Model):
     password = models.CharField(max_length = 100)
 
     def __str__(self):
-        pass
+        
+        return self.surname, self.name, self.email, self.phone, self.password
