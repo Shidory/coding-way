@@ -3,7 +3,9 @@ from django.views.generic import CreateView #import CreateView
 from .models import CreateAccount
 
 class AccountCreateView(CreateView):
-    pass
+    
+    fields = ('surname', 'name', 'email', 'phone', 'password')
 
 def v_account(request):
+    
     return render(request, 'account.html')
