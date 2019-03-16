@@ -5,7 +5,7 @@ from .models import User
 class UserCreateView(CreateView):
     
     model = User
-    template_name = 'login.hmtl'
+    template_name = 'login.html'
     fields = ('surname', 'name', 'email', 'phone', 'password')
 
 """def v_account(request):
