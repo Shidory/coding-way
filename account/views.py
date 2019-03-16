@@ -1,13 +1,13 @@
 from django.shortcuts import render
 from django.views.generic import CreateView #import CreateView
-from .models import User
+from .models import CreateAccount
 
 class UserCreateView(CreateView):
     
-    model = User
+    model = CreateAccount
     template_name = 'login.html'
     fields = ('surname', 'name', 'email', 'phone', 'password')
 
-"""def v_account(request):
+def account_controller(request):
 
-    return render(request, 'account.html')"""
+    return render(request, 'account.html')
