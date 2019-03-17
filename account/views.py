@@ -10,4 +10,4 @@ class UserCreateView(CreateView):
 
 def account_controller(request):
 
-    return render(request, 'account/account.html')
+    return render(request, 'account.html')
