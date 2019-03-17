@@ -2,5 +2,5 @@ from django.urls import path
 from .import views
 
 urlpatterns = [
-    path('', , name='home'),
+    path('', views.home_controller, name='home'),
 ]
