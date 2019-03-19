@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import CreateView #import CreateView
 from .models import CreateAccount
+from django.http.response import HttpResponse
 
 """class UserCreateView(CreateView):
     
@@ -13,4 +14,4 @@ def account_controller(request):
     return render(request, 'account.html')"""
 
 def contact(request):
-    pass
+    return HttpResponse('contact view')
