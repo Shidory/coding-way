@@ -3,6 +3,8 @@ from django.views.generic import CreateView #import CreateView
 from .models import CreateAccount
 from django.http.response import HttpResponse
 
+from .forms import ContactForm
+
 """class UserCreateView(CreateView):
     
     model = CreateAccount
