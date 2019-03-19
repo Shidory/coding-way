@@ -18,6 +18,9 @@ def account_controller(request):
 def contact(request):
     
     if request.method == 'POST':
-        pass
+        
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            
     form = ContactForm()
     return render(request, 'account/form.html', {'form': form})
