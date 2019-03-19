@@ -1,4 +1,5 @@
 from django import forms
 
 class ContactForm(forms.Form):
-    pass
+    
+    name = forms.CharField()
