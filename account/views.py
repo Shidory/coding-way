@@ -16,4 +16,6 @@ def account_controller(request):
     return render(request, 'account.html')"""
 
 def contact(request):
-    return HttpResponse('contact view')
+    
+    form = ContactForm()
+    
