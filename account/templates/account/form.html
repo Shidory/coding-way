@@ -8,8 +8,9 @@
 </head>
 <body>
     <form action="">
-        
+        {% csrf_token %}
         {{form}}
+        <button type="button">Submit</button>
     </form>
     
 </body>
