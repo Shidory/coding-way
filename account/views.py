@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.generic import CreateView #import CreateView
 from .models import CreateAccount
 
-class UserCreateView(CreateView):
+"""class UserCreateView(CreateView):
     
     model = CreateAccount
     template_name = 'login.html'
@@ -10,4 +10,7 @@ class UserCreateView(CreateView):
 
 def account_controller(request):
 
-    return render(request, 'account.html')
+    return render(request, 'account.html')"""
+
+def contact(request):
+    pass
