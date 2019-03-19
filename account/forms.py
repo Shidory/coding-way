@@ -6,3 +6,4 @@ class ContactForm(forms.Form):
     email = forms.EmailField(label='Email')
     category = forms.ChoiceField(choices=[('question', 'Question'), ('other', 'Other')])
     subject = forms.CharField(required=False)
+    body = forms.CharField(widget=forms.Textarea)
