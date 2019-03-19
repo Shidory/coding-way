@@ -18,4 +18,4 @@ def account_controller(request):
 def contact(request):
     
     form = ContactForm()
-    return render(request, 'form.html', {'form': form})
+    return render(request, 'account/form.html', {'form': form})
