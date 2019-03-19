@@ -21,6 +21,6 @@ def contact(request):
         
         form = ContactForm(request.POST)
         if form.is_valid():
-            
+            name = form.cleaned_data['name']
     form = ContactForm()
     return render(request, 'account/form.html', {'form': form})
